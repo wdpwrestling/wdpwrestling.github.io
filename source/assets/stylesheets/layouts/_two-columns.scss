@@ -1,0 +1,64 @@
+.two-column {
+  &.even {
+    & > *:first-child {
+      margin-bottom: 20px;
+      @include media($large-screen) {
+        margin-bottom: 0;
+        @include span-columns(6 of 12);
+      }
+    }
+    & > *:last-child {
+      margin-top: 20px;
+      @include media($large-screen) {
+        margin-bottom: 0;
+        @include span-columns(6 of 12);
+      }
+    }
+  }
+}
+
+/* .two-column { */
+/*   &.normal { */
+/*     & > *:first-child, */
+/*     & > *:last-child { */
+/*       text-align: center; */
+/*     } */
+/*   } */
+/*   &.pinned-l-r { */
+/*     & > *:first-child, */
+/*     & > *:last-child { */
+/*       text-align: center; */
+/*     } */
+/*   } */
+/*   @include media(520px) { */
+/*     &.pinned-l-r { */
+/*       & > *:first-child { */
+/*         text-align: left; */
+/*       } */
+/*       & > *:last-child { */
+/*         text-align: left; */
+/*       } */
+/*       & > *:first-child { */
+/*         @include span-columns(6); */
+/*       } */
+/*       & > *:last-child { */
+/*         @include span-columns(6); */
+/*       } */
+/*     } */
+/*   } */
+/*   @include media(620px) { */
+/*     &.normal { */
+/*       h3 { */
+/*         margin-top: 40px; */
+/*       } */
+/*       & > *:first-child { */
+/*         @include span-columns(4); */
+/*         text-align: left; */
+/*       } */
+/*       & > *:last-child { */
+/*         @include span-columns(8); */
+/*         text-align: left; */
+/*       } */
+/*     } */
+/*   } */
+

@@ -1,0 +1,53 @@
+body {
+  background-color: $light-gray;
+  color: $medium-gray;
+}
+
+.container {
+  @include margin(150px null null);
+  @include outer-container;
+}
+
+.main-container {
+  @include margin(100px null null null);
+}
+
+.delete-me {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.display-mobile {
+  display: block;
+  @include media($medium-screen) {
+    display: none;
+  }
+}
+
+.display-tablet {
+  display: none;
+  @include media($medium-screen) {
+    display: block;
+  }
+}
+
+.calendars {
+  .display-mobile {
+    iframe {
+      min-width: 320px;
+      max-width: 600px;
+      width: 100%;
+      @include margin(20px auto);
+    }
+  }
+  .display-tablet {
+    iframe {
+      min-width: 600px;
+      max-width: 900px;
+      width: auto;
+      @include margin(20px auto);
+    }
+  }
+}

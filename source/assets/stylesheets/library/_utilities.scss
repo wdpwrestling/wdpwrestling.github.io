@@ -1,0 +1,35 @@
+// Text
+
+.center {
+  text-align: center;
+}
+
+.black {
+  color: black;
+}
+
+.orange {
+  color: $orange;
+}
+
+// Display
+.clear {
+  clear: both;
+}
+
+.small-padding {
+  @include padding(50px);
+}
+
+
+
+
+// HR
+
+hr {
+  &.main{
+    @include size(80% null);
+    @include margin(24px auto);
+    border: 2px black solid;
+  }
+}
