@@ -19,7 +19,7 @@ nav {
     }
     & > div {
       a {
-        color: white;
+        color: black;
         text-decoration: none;
         display: block;
         font-size: $font-size-large;
@@ -57,7 +57,7 @@ nav {
               &:hover {
                 opacity: 1;
                 background-color: $primary-color;
-                color: $white;
+                color: gray;
               }
             }
           }
@@ -234,7 +234,7 @@ nav {
               opacity: .45;
               &:hover {
                 opacity: 1;
-                color: $white;
+                color: black;
               }
             }
           }
